@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>DrumKit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="intro">
+      <div class="keys">
+        <div data-key="81" class="keys_item">
+          Q<span class="keys_item_span">Kick</span>
+        </div>
+        <div data-key="87" class="keys_item">
+          W<span class="keys_item_span">Clap</span>
+        </div>
+        <div data-key="69" class="keys_item">
+          E<span class="keys_item_span">Crash</span>
+        </div>
+        <div data-key="82" class="keys_item">
+          R<span class="keys_item_span">Cymbal</span>
+        </div>
+        <div data-key="84" class="keys_item">
+          T<span class="keys_item_span">Snare</span>
+        </div>
+        <div data-key="89" class="keys_item">
+          Y<span class="keys_item_span">FX</span>
+        </div>
+      </div>
+    </div>
+    <audio id="81" data-key="81" src="samples/Kick   (5).wav"></audio>
+    <audio id="87" data-key="87" src="samples/Claps (7).wav"></audio>
+    <audio id="69" data-key="69" src="samples/Crash 2.wav"></audio>
+    <audio id="82" data-key="82" src="samples/Cymbal (5).wav"></audio>
+    <audio id="84" data-key="84" src="samples/Snare  (6).wav"></audio>
+    <audio id="89" data-key="89" src="samples/FX (6).wav"></audio>
+    <script>
+      window.addEventListener("keydown", function (e) {
+        console.log(e.keyCode);
+        const audio = document.getElementById(e.keyCode);
+        audio.play();
+        console.log(audio);
+      });
+    </script>
+  </body>
+</html>
