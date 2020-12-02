@@ -28,7 +28,7 @@ body {
 .keys {
   background: #333;
   width: 100vh;
-  height: 100px;
+  height: 15vh;
   margin: 0 auto;
   /* opacity: 0.4; */
   display: flex;
@@ -56,4 +56,10 @@ body {
   left: 10px;
   font-weight: 300;
   color: aqua;
+}
+
+.playing{
+  transform: scale(1.2);
+  transition: all 0.5s;
+  border: aqua 5px solid;
 }
